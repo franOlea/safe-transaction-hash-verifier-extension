@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Safe Verifier Extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for verifying Safe transactions",
+  "action": {
+    "default_icon": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    },
+    "default_title": "Click to open panel"
+  },
+  "permissions": ["sidePanel", "scripting", "tabs"],
+  "host_permissions": [
+    "https://*.safe.global/*",
+    "https://9hk0f3a45c.execute-api.us-west-2.amazonaws.com/*"
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
+}

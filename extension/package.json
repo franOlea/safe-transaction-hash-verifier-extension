@@ -1,0 +1,51 @@
+{
+  "name": "safe-tx-hashes-extension",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "watch": "tsc -b --watch & vite build --watch",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "build:extension": "npm run build && cd build && zip -r ../safe-verifier-extension.zip . -x '*.DS_Store' '*.map' '*.ts' '*.tsx' '*.jsx' '*.config.js' '*.config.ts' '*.eslintrc*' '*.prettierrc*' '*.gitignore' '*.md' '*.log' 'node_modules/*' 'src/*'"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^4.1.3",
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-radio-group": "^1.2.3",
+    "@radix-ui/react-select": "^2.1.6",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@radix-ui/react-tabs": "^1.1.3",
+    "@tailwindcss/vite": "^4.0.17",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "ethers": "^6.11.1",
+    "lucide-react": "^0.485.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.54.2",
+    "styled-components": "^6.1.16",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.17",
+    "tw-animate-css": "^1.2.5",
+    "vite-plugin-static-copy": "^2.3.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/chrome": "^0.0.260",
+    "@types/node": "^22.13.14",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  }
+}

@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer ring -->
+  <circle cx="60" cy="60" r="56" stroke="#3C3C3D" stroke-width="4" fill="none" />
+
+  <!-- Shield shape -->
+  <path d="M60 25 L85 40 L80 80 L60 95 L40 80 L35 40 Z" fill="#3C3C3D" />
+
+  <!-- Checkmark -->
+  <path d="M48 62 L56 70 L72 50" fill="none" stroke="#00C853" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Gnosis-style node dot -->
+  <circle cx="60" cy="42" r="4" fill="#00C853" />
+</svg>
