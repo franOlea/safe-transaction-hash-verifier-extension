@@ -1,0 +1,25 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Warning triangle -->
+  <path
+    d="M60 20 L110 100 H10 Z"
+    fill="#FFC107"
+    stroke="#3C3C3D"
+    stroke-width="4"
+  />
+  <!-- Exclamation mark (line) -->
+  <rect
+    x="58"
+    y="45"
+    width="4"
+    height="30"
+    fill="#3C3C3D"
+    rx="2"
+  />
+  <!-- Exclamation mark (dot) -->
+  <circle
+    cx="60"
+    cy="85"
+    r="4"
+    fill="#3C3C3D"
+  />
+</svg>

@@ -31,6 +31,12 @@
     "service_worker": "background.js",
     "type": "module"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://*.safe.global/*"],
+      "js": ["content.js"]
+    }
+  ],
   "icons": {
     "16": "logo.png",
     "48": "logo.png",
