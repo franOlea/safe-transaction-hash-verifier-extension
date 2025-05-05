@@ -6,6 +6,10 @@
 
 A Chrome browser extension for verifying Safe multi-signature wallet transactions. This extension allows users to independently calculate and verify transaction hashes for Ethereum Safe (formerly Gnosis Safe) transactions.
 
+<p align="center">
+  <img src="screenshots/demo.gif" alt="Safe Transaction Hash Verifier Demo" width="600"/>
+</p>
+
 ## License
 
 [![License: AGPL-3.0-only](https://img.shields.io/badge/License-AGPL--3.0--only-blue)](https://www.gnu.org/licenses/agpl-3.0)
@@ -72,14 +76,14 @@ _(Coming soon)_
 
 ## Usage
 
-1. Navigate to a Safe transaction page at safe.global
-2. Click the extension icon or use the keyboard shortcut (Ctrl+B/Command+B)
-3. The extension will automatically detect your Safe address and network
-4. Enter the transaction nonce and Safe version (defaults to 1.3.0)
-5. Click "Calculate" to verify the transaction hash
-6. Compare the result with the hash shown on your wallet interface
-   > [!IMPORTANT]
-   > Also compare the Safe interface, seeing a difference there could mean the front end is compromised.
+The extension automatically detects transaction confirmation pages when opened in the Safe Wallet web app and provides transaction verification automatically.
+
+For manual verification:
+
+1. Click the Extension logo on the side panel to open manual mode
+2. Enter your Safe address, network, and transaction details
+3. Click "Calculate" to verify the transaction hash
+4. Compare the result with the hash shown on your wallet interface and the Safe wallet interface
 
 ## Project Structure
 
